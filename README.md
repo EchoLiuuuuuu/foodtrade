@@ -12,3 +12,5 @@ According to <a href="https://www.ers.usda.gov/data-products/us-food-imports/doc
 <br>Note: For the item under Chapter 5, the item 0504 (Guts, bladders and stomachs of animals …) actually is regarded as "edible." This chapter indicates that it does not cover edible products except the items of products of animal origin. 
 
 <br>After clean the scale, there are 174 4-digit HS codes on food products. The code for each item category is the same from 1996 to 2007. I created a <a href="https://docs.google.com/spreadsheets/d/1LloSZrLH-NRakJNQImdTdzx5jtlM1Dl5Jw9UWpTkqfU/edit?usp=sharing">Google sheet</a> to show the code and definition of each category. The columns “hs07,” “hs02” and “hs96” indicate the 4-digit HS code we use in the research.
+
+Since the categories for food are the same in HS 1996, 2002 and 2007 edition, I use the HS 1996 edition in my research because among OEC's datasets it covers the most time preiod. The data I use is the "HS6 REV. 1996 (1998 - 2017) - Product Trade between Origin and Destination Country by Year (4 digit depth, bilateral)" dataset from <a href="https://oec.world/en/resources/data/">OEC</a>.
