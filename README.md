@@ -8,7 +8,6 @@ The Harmonized System was introduced in 1988 and is administrated by the World C
 <br>I couldn’t find the amendment document in 1996, so I cannot tell what are the changes from the 1992 edition to 1996. In this case, I only studied and cleaned the 1996-2007 edition. I guess the reason we use the 1992 version was because it covers a longer time scale.
 
 According to <a href="https://www.ers.usda.gov/data-products/us-food-imports/documentation/">USDA</a>, Food products are covered by chapters 1 - 22, except chapter 5 (Products of animal origin...) and 14 (Vegetable plaiting materials). 
-
 <br>Note: For the item under Chapter 5, the item 0504 (Guts, bladders and stomachs of animals …) actually is regarded as "edible." This chapter indicates that it does not cover edible products except the items of products of animal origin. 
 
 <br>After clean the scale, there are 174 4-digit HS codes on food products. The code for each item category is the same from 1996 to 2007. I created a <a href="https://docs.google.com/spreadsheets/d/1LloSZrLH-NRakJNQImdTdzx5jtlM1Dl5Jw9UWpTkqfU/edit?usp=sharing">Google sheet</a> to show the code and definition of each category. The columns “hs07,” “hs02” and “hs96” indicate the 4-digit HS code we use in the research.
