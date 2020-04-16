@@ -1,4 +1,4 @@
-##For top 10 CHN pertner
+##For top 10 CHN partner
 ## filter China's trade activites, save as chntrade
 chntrade <- subset(finalsumhs96, origin == "chn" | dest == "chn")
 
