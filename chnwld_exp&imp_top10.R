@@ -1,6 +1,6 @@
 ##For top 10 CHN partner
 ## filter China's trade activites, save as chntrade
-chntrade <- subset(finalsumhs96, origin == "chn" | dest == "chn")
+chntrade <- subset(finalsumhs02, origin == "chn" | dest == "chn")
 
 dire <- ifelse(chntrade$origin == "chn", "exports", "imports")
 chntrade$dire <- dire
@@ -41,6 +41,9 @@ exprank <- chnexp10 %>%
   arrange(Freq) %>%
   mutate(row_number = row_number(desc(Freq)))
 
+## export both tables for China top 10
+write.table(exprank, file = "chnexp10.csv",sep = ",", row.names=FALSE)
+write.table(imprank, file = "chnimp10.csv",sep = ",", row.names=FALSE)
 
 
 ##For worldwide top 10
@@ -61,7 +64,7 @@ worldexp10 <- worldtop10 %>%
   mutate(row_number = row_number(desc(Freq)))
 
 ##sum each countries' import val by year
-sumimpyear <- tapply(finalsumhs96$Freq, finalsumhs96[,c("year", "dest")], sum)
+sumimpyear <- tapply(finalsumhs02$Freq, finalsumhs02[,c("year", "dest")], sum)
 tsumimpyear = t(sumimpyear)
 forrank2 <- as.data.frame.table(tsumimpyear)
 
