@@ -33,19 +33,19 @@ chnexp10 <- chnexport %>%
 ## rank the top 10 
 imprank <- chnimp10 %>%
   group_by(year) %>%
-  arrange(val) %>%
-  mutate(row_number = row_number(desc(val)))
+  arrange(Freq) %>%
+  mutate(row_number = row_number(desc(Freq)))
 
 exprank <- chnexp10 %>%
   group_by(year) %>%
-  arrange(val) %>%
-  mutate(row_number = row_number(desc(val)))
+  arrange(Freq) %>%
+  mutate(row_number = row_number(desc(Freq)))
 
 
 
 ##For worldwide top 10
 ##sum each countries' export val by year
-sumexpyear <- tapply(finalsumhs96$val, finalsumhs96[,c("year", "origin")], sum)
+sumexpyear <- tapply(finalsumhs96$Freq, finalsumhs96[,c("year", "origin")], sum)
 tsumexpyear = t(sumexpyear)
 forrank <- as.data.frame.table(tsumexpyear)
 
@@ -61,7 +61,7 @@ worldexp10 <- worldtop10 %>%
   mutate(row_number = row_number(desc(Freq)))
 
 ##sum each countries' import val by year
-sumimpyear <- tapply(finalsumhs96$val, finalsumhs96[,c("year", "dest")], sum)
+sumimpyear <- tapply(finalsumhs96$Freq, finalsumhs96[,c("year", "dest")], sum)
 tsumimpyear = t(sumimpyear)
 forrank2 <- as.data.frame.table(tsumimpyear)
 
